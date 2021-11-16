@@ -10,7 +10,7 @@ function preload(){
    "Images/HotAirBallon02.png","Images/HotAirBallon03.png","Images/HotAirBallon03.png","Images/HotAirBallon03.png");
   }
 
-//Function to set initial environment
+//Função para definir o ambiente inicial
 function setup() {
 
    database=firebase.database();
@@ -29,7 +29,7 @@ function setup() {
   textSize(20); 
 }
 
-// function to display UI
+// função para exibir a UI
 function draw() {
   background(bg);
 
@@ -56,7 +56,7 @@ function draw() {
   fill(0);
   stroke("white");
   textSize(25);
-  text("**Use arrow keys to move Hot Air Balloon!",40,40);
+  text("**Use as setas para mover o balão de ar quente!",40,40);
 }
 
  function updateHeight(x,y){
@@ -67,7 +67,7 @@ function draw() {
  }
 
 
-//CHOOSE THE CORRECT READHEIGHT FUNCTION
+//ESCOLHA A FUNÇÃO DE READHEIGHT CORRETA
 // function readHeight(data){
 //   balloon.x = height.x;
 //   balloon.y = height.y;
@@ -90,5 +90,5 @@ function draw() {
 // }
 
 function showError(){
-  console.log("Error in writing to the database");
+  console.log("Erro ao escrever no banco de dados");
 }
